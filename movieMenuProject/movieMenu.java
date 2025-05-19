@@ -21,7 +21,7 @@ public class MovieMenu {
                     break;
 
                 case 2:
-                    System.out.print("Please enter the row you would like to sit in (1 - 10): ");
+                    System.out.print("\nPlease enter the row you would like to sit in (1 - 10): ");
                     int reserveRow = scanner.nextInt() - 1;
                     System.out.print("Please enter the column you would like to sit in (1 -10): ");
                     int reserveCol = scanner.nextInt() - 1;
@@ -29,7 +29,7 @@ public class MovieMenu {
                     break;
 
                 case 3:
-                    System.out.print("Please enter the row on your ticket (1 - 10): ");
+                    System.out.print("\nPlease enter the row on your ticket (1 - 10): ");
                     int cancelRow = scanner.nextInt() - 1;
                     System.out.print("Please enter the column on your ticket (1 - 10): ");
                     int cancelCol = scanner.nextInt() - 1;
@@ -38,11 +38,11 @@ public class MovieMenu {
 
                 case 4:
                     running = false;
-                    System.out.println("Goodbye!");
+                    System.out.println("\nGoodbye!");
                     break;
 
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println("\nInvalid option.");
                     break;
             }
         }

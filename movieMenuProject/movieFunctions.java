@@ -28,12 +28,23 @@ public class MovieFunctions {
         if (isValid(rowIndex, columnIndex)) {
             if (seats[rowIndex][columnIndex].equals("A")) {
                 seats[rowIndex][columnIndex] = "X";
-                System.out.println("Seat reserved.");
+
+                // Show mock ticket
+                System.out.println("\nTicket Confirmation");
+                System.out.println("----------------------------");
+                System.out.println("Movie: Forest Gump");
+                System.out.println("Date: 2025-05-18");
+                System.out.println("Time: 7:45 PM");
+                System.out.println("Theater: 1");
+                System.out.println("Seat: Row " + (rowIndex + 1) + ", Seat " + (columnIndex + 1));
+                System.out.println("Enjoy the show!");
+                System.out.println("----------------------------\n");
+
             } else {
-                System.out.println("That seat is already reserved.");
+                System.out.println("\nThat seat is already reserved.");
             }
         } else {
-            System.out.println("Invalid seat location.");
+            System.out.println("\nInvalid seat location.");
         }
     }
 
@@ -41,17 +52,17 @@ public class MovieFunctions {
         if (isValid(rowIndex, columnIndex)) {
             if (seats[rowIndex][columnIndex].equals("X")) {
                 seats[rowIndex][columnIndex] = "A";
-                System.out.println("Reservation cancelled.");
+                System.out.println("\nReservation cancelled.");
             } else {
-                System.out.println("That seat is not reserved.");
+                System.out.println("\nThat seat is not reserved.");
             }
         } else {
-            System.out.println("Invalid seat location.");
+            System.out.println("\nInvalid seat location.");
         }
     }
 
     private boolean isValid(int rowIndex, int columnIndex) {
         return rowIndex >= 0 && rowIndex < seats.length &&
-               columnIndex >= 0 && columnIndex < seats[0].length;
+                columnIndex >= 0 && columnIndex < seats[0].length;
     }
 }
