@@ -1,0 +1,23 @@
+# Maven build output
+/target/
+/**/target/
+
+# Maven wrapper (keep the JAR)
+/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA config
+/.idea/
+/*.iml
+
+# VS Code config
+/.vscode/
+
+# Java compiler artifacts
+*.class
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# ignore all PDF files
+*.pdf
