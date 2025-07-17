@@ -65,4 +65,5 @@ Choose an option: 4
 Adopted dog #?  # if any remain
 
 Choose an option: 6
+Exit
 ```
